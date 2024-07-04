@@ -9,18 +9,20 @@ import img7 from "../assets/s3.jpg";
 import img8 from "../assets/m2.jpg";
 import img9 from "../assets/m3.jpg";
 import img10 from "../assets/c2.jpg";
+import ch from "../assets/ch.jpg"
+import ch2 from "../assets/ch2.jpg"
 function Categories() {
   const categoryItems = [
-    { id: 1, title: "Main Course", image: img1, image2: img8 },
-    { id: 2, title: "Chinese Starters", image: img2 , image2: img10 },
-    { id: 3, title: "Noodles & Rice", image: img3, image2: img4 },
-    { id: 4, title: "Soups", image: img7 , image2: img5 }
+    { id: 1, title: "Starters", image: img2, image2: img10, desc: "Savor our delicious Chinese starters, including crispy spring rolls, flavourful momos, and spicy szechuan chicken, perfect for any occasion." },
+    { id: 2, title: "Soups", image: img7, image2: img5, desc: "Warm up with our soups: savory hot and sour, fresh vegetables , aromatic egg drop, and nourishing chicken corn, all freshly prepared." },
+    { id: 3, title: "Noodles & Rice", image: img3, image2: img4, desc: "Indulge in our noodle and rice dishes: savory lo mein, spicy Szechuan noodles, fragant fried rice, and classsic chow mein." },
+    { id: 4, title: "Chopsuey", image: ch, image2: ch2, desc: "A flavorful mix of tender meats, fresh vegetables and savory sauce, served with steamed rice." }
   ];
 
   return (
     <>
       <div className='max-w-screen-2xl xl:px-20 px-4 py-24 mx-auto text-center mt-[200px] md:mt-11'>
-        <p className='subtitle'>Customer Categories</p>
+      
         <h2 className='title'>Popular Categories</h2>
       </div>
       {/* category cards */}
@@ -44,11 +46,12 @@ function Categories() {
             <div className="absolute inset-0 flex flex-col items-start justify-end p-6 bg-gradient-to-t from-black to-transparent">
               <h3 className="text-xl font-medium text-white">{item.title}</h3>
               <p className="mt-1.5 text-pretty text-xs text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi dicta impedit aperiam ipsum!
+                {item.desc}
               </p>
-              <span className="mt-3 inline-block bg-red-700 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+              <a href="/menu">              <span className="mt-3 inline-block bg-red-700 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
                 View Menu
-              </span>
+              </span></a>
+
             </div>
           </a>
         ))}

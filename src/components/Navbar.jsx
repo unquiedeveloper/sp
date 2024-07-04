@@ -40,7 +40,7 @@ function Navbar() {
                                     <li className="text-lg  hover:text-red-700"><a className='hover:text-red-700' href='/menu'>Chinese Starters</a></li>
                                     <li className="text-lg  hover:text-red-700"><a className='hover:text-red-700' href='/menu'>Noodles and Rice</a></li>
                                     <li className="text-lg  hover:text-red-700"><a className='hover:text-red-700' href='/menu'>Momos</a></li>
-                                    <li className="text-lg  hover:text-red-700"><a className='hover:text-red-700' href='/menu'>Chopsy</a></li>
+                                    <li className="text-lg  hover:text-red-700"><a className='hover:text-red-700' href='/menu'>Chopsuey</a></li>
                                     <li className="text-lg  hover:text-red-700"><a className='hover:text-red-700' href='/menu'>Main Course</a></li>
                                 </ul>
                             </li>
@@ -62,7 +62,7 @@ function Navbar() {
                                     <li className="text-lg "><a href='/menu' >Chinese Starters</a></li>
                                     <li className="text-lg "><a  href='/menu'>Noodles and Rice</a></li>
                                     <li className="text-lg "><a href='/menu' >Momos</a></li>
-                                    <li className="text-lg "><a href='/menu' >Chopsy</a></li>
+                                    <li className="text-lg "><a href='/menu' >Chopsuey</a></li>
                                     <li className="text-lg "><a href='/menu' >Main Course</a></li>
                                 </ul>
                             </details>
@@ -71,7 +71,7 @@ function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end flex items-center h-full"> {/* Ensure the end section takes full height */}
-                    <a href='/contact' className="btn bg-red-700 text-white hover:bg-red-600 rounded-full px-6 flex items-center gap-2"><BiPhoneCall /> Contact</a>
+                    <a href='/contact' className="btn bg-red-700 text-white hover:bg-red-600 rounded-full px-6 flex items-center gap-2"><BiPhoneCall />Order Now </a>
                 </div>
             </div>
         </div>
